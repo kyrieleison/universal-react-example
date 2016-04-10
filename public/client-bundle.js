@@ -24752,6 +24752,10 @@
 
 	var _index2 = _interopRequireDefault(_index);
 
+	var _about = __webpack_require__(219);
+
+	var _about2 = _interopRequireDefault(_about);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var routes = {
@@ -24760,6 +24764,9 @@
 	  childRoutes: [{
 	    path: '/',
 	    component: _index2.default
+	  }, {
+	    path: '/about',
+	    component: _about2.default
 	  }]
 	};
 
@@ -24780,6 +24787,8 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -24808,6 +24817,28 @@
 	          'h2',
 	          null,
 	          'Welcome to my App'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/' },
+	              'Home'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/about' },
+	              'About'
+	            )
+	          )
 	        ),
 	        this.props.children
 	      );
@@ -24871,6 +24902,59 @@
 	}(_react2.default.Component);
 
 	exports.default = IndexComponent;
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var AboutComponent = function (_React$Component) {
+	  _inherits(AboutComponent, _React$Component);
+
+	  function AboutComponent() {
+	    _classCallCheck(this, AboutComponent);
+
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(AboutComponent).apply(this, arguments));
+	  }
+
+	  _createClass(AboutComponent, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'A little bit about me.'
+	        )
+	      );
+	    }
+	  }]);
+
+	  return AboutComponent;
+	}(_react2.default.Component);
+
+	exports.default = AboutComponent;
 
 /***/ }
 /******/ ]);
