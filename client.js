@@ -1,21 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-
-import AppComponent from './components/app';
-import IndexComponent from './components/index';
-
-const routes = {
-  path: '',
-  component: AppComponent,
-  childRoutes: [
-    {
-      path: '/',
-      component: IndexComponent
-    }
-  ]
-}
+import { Router, browserHistory } from 'react-router'
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import routes from './routes';
 
 render(
-  <AppComponent/>,
+  <Router routes={routes} history={browserHistory} />,
   document.getElementById('root')
-);
+)
