@@ -1,6 +1,6 @@
-# universal-react-sample
+# universal-react-example
 
 ```
 $ npm install
-$ ./node_modules/.bin/babel-node server.js
+$ npm run build & npm start
 ```
