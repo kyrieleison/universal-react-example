@@ -24748,11 +24748,11 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _index = __webpack_require__(218);
+	var _index = __webpack_require__(219);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _about = __webpack_require__(219);
+	var _about = __webpack_require__(220);
 
 	var _about2 = _interopRequireDefault(_about);
 
@@ -24790,6 +24790,10 @@
 
 	var _reactRouter = __webpack_require__(159);
 
+	var _app = __webpack_require__(218);
+
+	var _app2 = _interopRequireDefault(_app);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24823,7 +24827,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'li',
-	            null,
+	            { className: _app2.default.hoge },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/' },
@@ -24852,6 +24856,13 @@
 
 /***/ },
 /* 218 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+	module.exports = {"hoge":"app_hoge__2Lj7h"};
+
+/***/ },
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24904,7 +24915,7 @@
 	exports.default = IndexComponent;
 
 /***/ },
-/* 219 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
