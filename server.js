@@ -4,6 +4,9 @@ import http from 'http';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RouterContext } from 'react-router';
+
+require('css-modules-require-hook/preset');
+
 import routes from './routes';
 
 const app = express();
