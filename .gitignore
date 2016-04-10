@@ -1,0 +1,14 @@
+# for ios
+.DS_store
+
+# for vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+# for node
+/node_modules
+/npm-debug.log
